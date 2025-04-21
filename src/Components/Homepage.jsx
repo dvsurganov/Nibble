@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import MealService from '../services/mealService';
 import Banner from "./Banner.jsx";
 import Carousel from "./Carousel.jsx";
+import Subscriptions from "./Subscriptions.jsx";
 
 const Homepage = () => {
     // Your existing code for random meal
@@ -39,6 +40,8 @@ const Homepage = () => {
         <div className="pt-20">
             <div className="container mx-auto px-4 py-8">
                 <Banner />
+                <Subscriptions />
+
                 {loading ? (
                     <div className="text-center">Loading...</div>
                 ) : randomMeal && (

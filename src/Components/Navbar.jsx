@@ -93,7 +93,8 @@ const Navbar = () => {
 
                     {/* AI Chef with info span */}
                     <div className="relative">
-                        <button
+                        <Link
+                            to="/aichef"
                             className="nav-links"
                             onMouseEnter={() => setTooltipVisible(true)}
                             onMouseLeave={() => setTooltipVisible(false)}
@@ -101,7 +102,7 @@ const Navbar = () => {
                             AI Chef
                             <span
                                 className="ml-1 h-5 w-5 inline-flex items-center justify-center rounded-full bg-purple-300 text-purple-800 text-xs font-bold">i</span>
-                        </button>
+                        </Link>
 
                         {tooltipVisible && (
                             <div
@@ -111,6 +112,13 @@ const Navbar = () => {
                                     className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 rotate-45 bg-purple-700"></div>
                             </div>
                         )}
+                    </div>
+
+
+                    {/*Subscriptions*/}
+                    <div className="relative">
+                        <Link to="/subscriptions" className="nav-links">Subscriptions</Link>
+
                     </div>
                 </div>
 

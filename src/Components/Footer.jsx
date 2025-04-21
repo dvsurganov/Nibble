@@ -19,7 +19,8 @@ const Footer = () => {
                     <div className="w-full md:w-1/5">
                         <h3 className="text-lg font-semibold mb-2">Nibble Nook</h3>
                         <p className="text-gray-400 text-sm">
-                            Your personalized recipe platform for delicious meals tailored to your preferences.
+                            Your personalized recipe platform for
+                            meals tailored to your preferences.
                         </p>
                     </div>
 
